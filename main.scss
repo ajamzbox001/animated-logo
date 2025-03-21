@@ -1,0 +1,63 @@
+@import "/animated-company-logo/files/sass/helpers/_placeholders";
+@import "/animated-company-logo/files/sass/helpers/_animations";
+@import "/animated-company-logo/files/sass/helpers/_variables";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+  padding-top: 5%;
+  background-color: #f1f2f3;
+}
+
+h3 {
+  color: #204056;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.183em;
+  line-height: 1.4;
+  position: relative;
+  padding-top: 2%;
+  left: -6.3%;
+}
+
+.slide-left {
+  position: relative;
+  left: 50%;
+  animation: slide-left 5s;
+  @extend %slide-left;
+}
+
+@keyframes slide-left {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+circle {
+  opacity: 1;
+}
+
+.element {
+  position: absolute;
+  top: 15%;
+  left: 46%;
+  animation: appear 4s;
+}
+
+#sass-logo {
+  width: 100px;
+  fill: rgb(255, 255, 255);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
