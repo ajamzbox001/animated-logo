@@ -1,0 +1,22 @@
+@keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slide-left {
+    from { left: 0%; }
+    to { left: 40%; }
+  }
+  
+  /* Apply animations */
+  .element {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    animation: slide-left 3s ease-in-out forwards;
+  }
+  
+  .fade-in {
+    animation: appear 2s ease-in-out forwards;
+  }
+  
