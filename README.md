@@ -1,4 +1,4 @@
 # Animated Company Logo
 
-<p>First time using SCSS</p>
-<p>Also, it is a good practice to use code to make animation</p>
+<p>My first time using SCSS.</p>
+<p>It’s a good practice for me to code with SCSS to create a simple animation.</p>
